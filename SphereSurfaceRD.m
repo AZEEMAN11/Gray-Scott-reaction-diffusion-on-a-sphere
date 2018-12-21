@@ -61,9 +61,6 @@ vpde((-BoxSize < p(1,:)) & (p(1,:) < BoxSize) & (-BoxSize < p(2,:)) & (p(2,:) < 
 % Get system setup
 [ LHSu, LHSv, LLu, UUu, LLv, UUv, setup, TM ] = getRDSetup( p, t, Du, Dv, dt, Np );
 
-% upde = upde';
-% vpde = vpde';
-
 % Main simulation loop
 for i = 1:nt
     % Set reaction load vectors
